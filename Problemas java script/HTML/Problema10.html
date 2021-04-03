@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problemas de JavaScript</title>
     <link rel="stylesheet" href="../styles/css/main.css">
-    <script defer src="../SCRIPTS/problema8.js"></script>
+    <script src="../SCRIPTS/problema10.js"></script>
+    <link rel="stylesheet" href="../styles/css/problema2.css">
     <style type="text/css">
     body {
-	background-color: #609;
+	background-color: #7E3041;
 }
     </style>
 </head>
@@ -17,9 +18,7 @@
 
     <div class="menu">
         <ul>
-            <h1 align="center">Menu<a href="../index.html">
-            </a></h1>
-            <a href="../index.html">            </a>
+            <h1 align="center">Menu</h1>
             <li><a href="../Index.html">Problema 1</a></li>
             <li><a href="Problema2.html">Problema 2</a></li>
             <li><a href="Problema3.html">Problema 3</a></li>
@@ -30,38 +29,47 @@
             <li><a href="Problema8.html">Problema 8</a></li>
             <li><a href="Problema9.html">Problema 9</a></li>
             <li><a href="Problema10.html">Problema 10</a></li>
-            <a href="../index.html">            </a><a href="./problema10.html">            </a>
-      </ul>
-    </div>
+            <a href="../../index.html">            </a><a href="./problema10.html">
+            </a>
+        </ul>
+</div>
 
     <div class="container-main">
 
-        <h2>
-            Problemas Selectivos compuestos <br>
-            Problema 8
-      </h2>
+        <div class="header">
+            <h2>
+                Problemas Selectivos compuestos <br>
+                Problema 10
+            </h2>
+            <h3>Flores Zamora Ithan Adrian <br> 4IV9 PSW</h3>
+        </div>
 
         <form action="" class="formulario">
 
             <div class="box">
-                <p id="sucesion" class="text-form">Digite el primer numero:</p>
+                <p class="text-form">Digite el salario del trabajador: </p>
             </div>
-
             <div class="box-input">
-                <input type="text" id="comparacion" onkeypress="return validar(event)" class="input-evy">
+                <input type="text" id="salario" onkeypress="return validar(event)" class="input-evy">
             </div>
 
             <div class="box">
-                <input type="button" value="El numero de mayor valor" onclick="mayor()" class="data">
+                <p class="text-form">Digite la antiguedad del trabajador en meses: </p>
+            </div>
+            <div class="box-input">
+                <input type="text" id="antiguedad" onkeypress="return validar(event)" class="input-evy">
             </div>
 
+            <div class="box">
+                <input type="button" value="Calcular utilidad" class="data">
+            </div>
             <div class="box-input">
-                <input type="text" readonly id="comprobacion" class="input-evy">
+                <input type="text" id="calculado" onclick="utilidades()" readonly class="input-evy">
             </div>
 
         </form>
 
-</div>
+    </div>
     
 </body>
 </html>
