@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de JavaScript</title>
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <script defer src="../SCRIPTS/problema9.js"></script>
+    <style type="text/css">
+    body {
+	background-color: #F0F;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+        <ul>
+            <h1 align="center">Menu<a href="../index.html">
+            </a></h1>
+            <a href="../index.html">            </a>
+            <li><a href="../Index.html">Problema 1</a></li>
+            <li><a href="Problema2.html">Problema 2</a></li>
+            <li><a href="Problema3.html">Problema 3</a></li>
+            <li><a href="Problema4.html">Problema 4</a></li>
+            <li><a href="Problema5.html">Problema 5</a></li>
+            <li><a href="Problema6.html">Problema 6</a></li>
+            <li><a href="Problema7.html">Problema 7</a></li>
+            <li><a href="Problema8.html">Problema 8</a></li>
+            <li><a href="Problema9.html">Problema 9</a></li>
+            <a href="../index.html">            </a><a href="./problema9.html">
+            </a><a href="./problema10.html">            </a>
+      </ul>
+    </div>
+
+    <div class="container-main">
+
+        <h2>
+            Problemas Selectivos compuestos <br>
+            Problema 9
+        </h2>
+
+        <form action="" class="formulario">
+
+            <div class="box">
+                <p class="text-form">Digite las horas trabajadas: </p>
+            </div>
+
+            <div class="box-input">
+                <input type="text" id="horas" onkeypress="return validar(event)" class="input-evy">
+            </div>
+
+            <div class="box">
+                <p class="text-form">Digite el sueldo por hora del trabajador: </p>
+            </div>
+
+            <div class="box-input">
+                <input type="text" id="sueldo" onkeypress="return validarS(event)" class="input-evy">
+            </div>
+
+            <div class="box">
+                <input type="button" onclick="calcularSueldo()" value="Calcular sueldo" class="data">
+            </div>
+
+            <div class="box-input">
+                <input type="text" id="total" readonly class="input-evy">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

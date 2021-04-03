@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de JavaScript</title>
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <script src="../SCRIPTS/problema5.js"></script>
+        <style type="text/css">
+    body {
+	background-color: #F00;
+}
+    </style>
+</head>
+<body>
+    
+    <h1 align="center">Menu</h1>
+    <div class="menu">
+        <ul>
+          <li><a href="../Index.html">Problema 1</a></li>
+          <li><a href="Problema2.html">Problema 2</a></li>
+          <li><a href="Problema3.html">Problema 3</a></li>
+          <li><a href="Problema4.html">Problema 4</a></li>
+          <li><a href="Problema5.html">Problema 5</a></li>
+          <li><a href="Problema6.html">Problema 6</a></li>
+          <li><a href="Problema7.html">Problema 7</a></li>
+          <li><a href="Problema8.html">Problema 8</a></li>
+          <li><a href="Problema9.html">Problema 9</a></li></ul>
+</div>
+
+    <div class="container-main">
+
+        <h2>
+            Problemas Secuenciales <br>
+            Problema 5
+        </h2>
+
+        <div class="content-form">
+
+            <form action="" class="formulario">
+
+                <div class="box">
+                    <p class="text-form">Numero de hombres en el grupo: </p>
+                </div>
+
+                <div class="box-input">
+                    <input type="text" id="hombres"onkeypress="return validar(event)" class="input-evy">
+                </div>                
+
+                <div class="box">
+                    <p class="text-form">Numero de mujeres en el grupo: </p>
+                </div>
+
+                <div class="box-input">
+                    <input type="text" id="mujeres" onkeypress="return validar(event)" class="input-evy">
+                </div>
+
+                <div class="box">
+                    <input type="button" class="data" onclick="calcular()" value="Mostrar '%' de hombres y mujeres">
+                </div>
+
+                <div class="box">
+                    <!-- <input type="text" id="mostrar" readonly placeholder="Hombres: %    Mujeres: %" class="input-evy"> -->
+                    <p class="text-form" id="mostrar" >Hombres: %    Mujeres: %</p>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

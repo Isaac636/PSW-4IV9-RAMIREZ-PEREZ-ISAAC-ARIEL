@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de JavaScript</title>
+    <link rel="stylesheet" href="./styles/css/main.css">
+   <style type="text/css">
+   body,td,th {
+	color: #E1E1E1;
+}
+body {
+	background-color: #000;
+}
+   </style>
+    body,td,th {
+	color: #FFF;
+}
+    body {
+	background-color: #000;
+}
+    </style>
+    <script src="./SCRIPTS/problema1.js"></script>
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <h1 align="center"><a href="./index.html">
+            </a>Menu </h1>
+            <a href="./index.html">
+            </a><a href="Index.html">
+            <li>Problema 1</li>
+            </a>
+            <a href="HTML/Problema2.html">
+            <li>Problema 2</li>
+          </a>
+            <a href="HTML/Problema3.html">
+                <li>Problema 3</li>
+            </a>
+            <a href="HTML/Problema4.html">
+                <li>Problema 4</li>
+            </a>
+            <a href="HTML/Problema5.html">
+                <li>Problema 5</li>
+            </a>
+            <a href="HTML/Problema6.html">
+                <li>Problema 6</li>
+            </a>
+            <a href="HTML/Problema7.html">
+                <li>Problema 7</li>
+            </a>
+            <a href="HTML/Problema8.html">
+                <li>Problema 8</li>
+            </a>
+            <a href="HTML/Problema9.html">
+                <li>Problema 9</li>
+            </a><a href="./problema10.html">            </a>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="box">
+            <h2>Problema 1</h2>
+            <div class="content-form">
+                <form action="">
+
+                    <p class="input">Capital a invertir: <input id="invertir" type="text"
+                            onkeypress="return validarn(event)" class="campo">
+                    </p>
+
+                    <p class="input">Meses a invertir: <input id="tiempoMeses" type="text" class="campo"
+                            onkeypress="return validarMeses(event)">
+                    </p>
+
+                    <div class="content-btn">
+                        <button type="submit" id="submitForm" class="btn-inversion" onclick="Calcular()">Verificar</button>
+                    </div>
+
+                  <div class="ver">
+                        <input id="inversionFinal" type="text" value="" placeholder="Aqui podra visualizar su inversion"
+                            class="verInversion" readonly>
+                  </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
